@@ -36,17 +36,37 @@ html, body {
 
 .launch-row {
   display: flex;
-  gap: 16px;
+  gap: 32px;
   align-items: center;
   justify-content: center;
   width: 100%;
   flex-wrap: nowrap;
 }
 
-.coming-soon-stamp {
-  width: 104px;
+.launch-stamp {
+  width: 105px;
   height: 56px;
   flex-shrink: 0;
+}
+
+.app-store-badge {
+  display: block;
+}
+
+.app-store-badge img {
+  display: block;
+}
+
+.commercial {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.commercial iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
 }
 
 .launch-copy {
@@ -123,9 +143,13 @@ html, body {
 }
 
 @media (max-width: 480px) {
-  .coming-soon-stamp {
+  .launch-row {
+    gap: 12px;
+  }
+
+  .launch-stamp {
     width: 72px;
-    height: 39px;
+    height: 38px;
   }
 
   .pink-heading {
